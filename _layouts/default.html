@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'zh-CN' }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🔷%3C/text%3E%3C/svg%3E">
+    {% if page.layout == 'home' %}
+    <style>
+        /* Page-specific hero styles are in styles.css */
+    </style>
+    {% endif %}
+</head>
+<body class="{% if page.layout == 'home' %}home-page{% elsif page.layout == 'guide' %}guide-page{% else %}content-page{% endif %}">
+    {% include nav.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+
+        document.querySelectorAll('pre > code.language-mermaid').forEach((code) => {
+            const pre = code.parentElement;
+            const graph = document.createElement('div');
+            graph.className = 'mermaid';
+            graph.textContent = code.textContent;
+            pre.replaceWith(graph);
+        });
+
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'dark',
+            securityLevel: 'loose',
+            themeVariables: {
+                background: '#0a0a0f',
+                primaryColor: '#13131a',
+                primaryTextColor: '#e4e4e7',
+                primaryBorderColor: 'rgba(99, 102, 241, 0.45)',
+                lineColor: '#818cf8',
+                secondaryColor: '#16161f',
+                tertiaryColor: '#111118',
+                fontFamily: 'Inter, sans-serif'
+            }
+        });
+    </script>
+</body>
+</html>

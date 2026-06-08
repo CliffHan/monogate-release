@@ -1,0 +1,24 @@
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="{{ '/' | relative_url }}" class="nav-logo">
+            <span class="logo-icon">◆</span>
+            <span class="logo-text">Monogate</span>
+        </a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="{{ '/#features' | relative_url }}" class="nav-link">特性</a></li>
+            <li><a href="{{ '/#quickstart' | relative_url }}" class="nav-link">快速开始</a></li>
+            <li><a href="{{ '/#architecture' | relative_url }}" class="nav-link">定位</a></li>
+            <li><a href="{{ '/#usecases' | relative_url }}" class="nav-link">场景</a></li>
+            <li><a href="{{ '/#docs' | relative_url }}" class="nav-link">文档</a></li>
+            <li><a href="{{ site.docker_image }}" class="nav-link docker-link" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.983 11.078h2.119a.186.186 0 0 0 .186-.185V9.006a.186.186 0 0 0-.186-.186h-2.119a.187.187 0 0 1-.186-.186V6.515a.186.186 0 0 0-.186-.186H11.49a.186.186 0 0 0-.186.186v2.119a.186.186 0 0 1-.186.186H9a.186.186 0 0 0-.186.186v1.887c0 .103.083.185.186.185h2.119a.186.186 0 0 1 .186.186v2.119a.186.186 0 0 0 .186.185h2.119a.186.186 0 0 0 .186-.185v-2.119a.186.186 0 0 1 .186-.186zM20 6h-2V4c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-2h2c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-4 14H4V4h12v16zm4-4h-2V8h2v8z"/></svg>
+                Docker
+            </a></li>
+        </ul>
+    </div>
+</nav>

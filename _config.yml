@@ -1,0 +1,4 @@
+title: Monogate
+description: "Monogate 帮你把本地或内网里的 Web 服务发布到公网，可自托管在 PaaS 或 VPS 上，并提供内嵌 Portal 与管理 Console。"
+lang: zh-CN
+docker_image: https://ghcr.io/cliffhan/monogate-server

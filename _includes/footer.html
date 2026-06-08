@@ -1,0 +1,42 @@
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="{{ '/' | relative_url }}" class="footer-logo">
+                    <span class="logo-icon">◆</span>
+                    <span class="logo-text">Monogate</span>
+                </a>
+                <p>让私有服务轻松触达公网</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>项目</h4>
+                    <ul>
+                        <li><a href="{{ '/#features' | relative_url }}">特性</a></li>
+                        <li><a href="{{ '/#quickstart' | relative_url }}">快速开始</a></li>
+                        <li><a href="{{ '/#architecture' | relative_url }}">定位</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>文档</h4>
+                    <ul>
+                        <li><a href="{{ '/guide/what-is-monogate.html' | relative_url }}">什么是 Monogate</a></li>
+                        <li><a href="{{ '/guide/embedded-portal.html' | relative_url }}">Embedded Portal</a></li>
+                        <li><a href="{{ '/guide/embedded-console.html' | relative_url }}">Embedded Console</a></li>
+                        <li><a href="{{ '/guide/environment-variables.html' | relative_url }}">环境变量</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>法律</h4>
+                    <ul>
+                        <li><a href="{{ '/terms.html' | relative_url }}">服务条款</a></li>
+                        <li><a href="{{ '/terms-en.html' | relative_url }}">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© {{ 'now' | date: '%Y' }} Monogate. 免费软件，商业使用请联系作者。</p>
+        </div>
+    </div>
+</footer>
