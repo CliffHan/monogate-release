@@ -6,37 +6,70 @@
                     <span class="logo-icon">◆</span>
                     <span class="logo-text">Monogate</span>
                 </a>
+                {% if page.lang == 'en' %}
+                <p>Expose private services to the public internet</p>
+                {% else %}
                 <p>让私有服务轻松触达公网</p>
+                {% endif %}
             </div>
             <div class="footer-links">
                 <div class="footer-col">
+                    {% if page.lang == 'en' %}
+                    <h4>Project</h4>
+                    <ul>
+                        <li><a href="{{ '/index-en.html#features' | relative_url }}">Features</a></li>
+                        <li><a href="{{ '/index-en.html#quickstart' | relative_url }}">Quick Start</a></li>
+                        <li><a href="{{ '/index-en.html#architecture' | relative_url }}">Architecture</a></li>
+                    </ul>
+                    {% else %}
                     <h4>项目</h4>
                     <ul>
                         <li><a href="{{ '/#features' | relative_url }}">特性</a></li>
                         <li><a href="{{ '/#quickstart' | relative_url }}">快速开始</a></li>
-                        <li><a href="{{ '/#architecture' | relative_url }}">定位</a></li>
+                        <li><a href="{{ '/#architecture' | relative_url }}">架构</a></li>
                     </ul>
+                    {% endif %}
                 </div>
                 <div class="footer-col">
+                    {% if page.lang == 'en' %}
+                    <h4>Docs</h4>
+                    <ul>
+                        <li><a href="{{ '/guide/what-is-monogate-en.html' | relative_url }}">What is Monogate</a></li>
+                        <li><a href="{{ '/guide/environment-variables-en.html' | relative_url }}">Environment Variables</a></li>
+                        <li><a href="{{ '/guide/cloudflare-tunnel-en.html' | relative_url }}">Cloudflare Tunnel</a></li>
+                    </ul>
+                    {% else %}
                     <h4>文档</h4>
                     <ul>
                         <li><a href="{{ '/guide/what-is-monogate.html' | relative_url }}">什么是 Monogate</a></li>
-                        <li><a href="{{ '/guide/embedded-portal.html' | relative_url }}">Embedded Portal</a></li>
-                        <li><a href="{{ '/guide/embedded-console.html' | relative_url }}">Embedded Console</a></li>
                         <li><a href="{{ '/guide/environment-variables.html' | relative_url }}">环境变量</a></li>
+                        <li><a href="{{ '/guide/cloudflare-tunnel.html' | relative_url }}">Cloudflare Tunnel</a></li>
                     </ul>
+                    {% endif %}
                 </div>
                 <div class="footer-col">
+                    {% if page.lang == 'en' %}
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="{{ '/terms-en.html' | relative_url }}">Terms of Service</a></li>
+                        <li><a href="{{ '/terms.html' | relative_url }}">服务条款</a></li>
+                    </ul>
+                    {% else %}
                     <h4>法律</h4>
                     <ul>
                         <li><a href="{{ '/terms.html' | relative_url }}">服务条款</a></li>
                         <li><a href="{{ '/terms-en.html' | relative_url }}">Terms of Service</a></li>
                     </ul>
+                    {% endif %}
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
+            {% if page.lang == 'en' %}
+            <p>© {{ 'now' | date: '%Y' }} Monogate. Freeware. For commercial use, please contact the author.</p>
+            {% else %}
             <p>© {{ 'now' | date: '%Y' }} Monogate. 免费软件，商业使用请联系作者。</p>
+            {% endif %}
         </div>
     </div>
 </footer>
