@@ -4,7 +4,7 @@ title: Embedded Portal
 lang: en
 ---
 
-> An embedded entry page for visitors to display public information about the current Monogate node and accessible HTTP service entry points.
+> An embedded entry page for visitors to display public information about the current Monogate node and provide client software download.
 
 ## Positioning
 
@@ -13,7 +13,7 @@ Embedded Portal is not an admin backend; it only serves as a visitor-facing entr
 It is more like a node homepage:
 
 - Tell visitors what this Monogate Server provides
-- Display publicly accessible web service entry points
+- Provide client software download
 - Provide necessary connection hints
 - Separate from the administrator's Embedded Console
 
@@ -52,7 +52,7 @@ https://your-server.com/monogate/portal
 The Portal is suitable for placing information for ordinary visitors:
 
 - Current node description
-- List of accessible services
+- Client software download
 - Brief usage hints
 - Public status or help information
 
@@ -62,7 +62,7 @@ It is not recommended to place management capabilities, sensitive configurations
 
 | Feature | Audience | Typical Use |
 |------|----------|------|
-| Embedded Portal | Ordinary visitors | View public entry points and service descriptions |
+| Embedded Portal | Ordinary visitors | Download client and view node description |
 | Embedded Console | Administrators | View Clients, routes, status, and diagnostic information |
 
 This separation allows Monogate to provide both a public entry and a management entry on the same Server, while maintaining clear permission boundaries.

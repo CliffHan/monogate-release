@@ -97,8 +97,8 @@ lang: en
                 <div class="feature-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
                 </div>
-                <h3>Embedded Console</h3>
-                <p>Provides an Embedded Console management interface and Embedded Portal user entry, separating administrator and regular user permissions.</p>
+                <h3>Embedded Portal &amp; Console</h3>
+                <p>Embedded Portal provides client download for visitors. Embedded Console lets administrators view connections and routes. Clear separation of permissions.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">

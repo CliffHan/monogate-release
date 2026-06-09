@@ -155,11 +155,11 @@ The Portal is for ordinary visitors, not an admin backend.
 It is suitable for:
 
 - Displaying current node information
-- Listing publicly accessible web service entry points
+- Providing client download
 - Providing brief access hints
 - Hosting user-facing entry pages
 
-The value of the Portal is: when a Server hosts multiple public services, visitors can first enter a clear entry page instead of only seeing bare paths.
+The value of the Portal is: User could easily download corresponding client binary, no need to find it somewhere else.
 
 ---
 
