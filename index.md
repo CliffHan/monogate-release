@@ -17,7 +17,7 @@ title: false
                 自托管内网穿透网关
             </div>
             <h1 class="hero-title">
-                把内网里的 Web 服务
+                把内网的 Web 服务
                 <span class="gradient-text">带到公网</span>
             </h1>
             <p class="hero-subtitle">
